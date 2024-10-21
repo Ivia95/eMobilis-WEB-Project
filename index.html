@@ -1,156 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta data  -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eMobilis</title>
+    <!-- bootstrap css links -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+    <!-- css link -->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        button{
-            background-color: green;
-            color: white;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-        }
-        #btnsubmit {
-            background-color: blue;
-            color: white;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-        }
-        .table{
-            width: 100%;
-            margin: 20px;
-            padding: 10px;
-            font-family: Calibri;
-        }
-        td{
-            padding: 12px;
-            text-align: center;
-            border: 1px solid grey;
-
-        }
-    </style>
 </head>
-<body style="background-color: black; color: white;">
-<!-- comments crtl slash   -->
-<P style="font-family: 'calibri light'; font-weight: bold; color: purple">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.
-</P>
-
-<!--ordered list-->
-<ol>
-    <li>Liverpool</li>
-    <li>Man City</li>
-    <li>Chelsea</li>
-    <li>Arsenal</li>
-</ol>
-<!--unordered list-->
-<ul>
-    <li>Flour</li>
-    <li>Pasta</li>
-    <li>Rice</li>
-</ul>
-<!--heading-->
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<!--blockquotes-->
-<blockquote>
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
-Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna. Integer nulla.
-Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget sapien. Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam erat volutpat. Sed at lorem in nunc porta tristique. Proin nec augue. Quisque aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-</blockquote>
-<!--button-->
-<button>Click Me</button>
-<button id="btnsubmit">submit</button>
-<!--image-->
-<img src="assets/slideshow-10.jpg" width="280" height="200" alt="some image here"/>
-
-<table class="table">
-    <thead>
-    <th>position</th>
-    <th>team name</th>
-    <th>points</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td>1</td>
-        <td>AFC LEO</td>
-        <td>30</td>
-    </tr>
-        <tr>
-        <td>2</td>
-        <td>Sofa Paka</td>
-        <td>29</td>
-    </tr>
-        <tr>
-        <td>3</td>
-        <td>Gor Mahia</td>
-        <td>28</td>
-    </tr>
-
-    </tbody>
-    <tfoot>
-    <tr>
-        <td colspan="2">Total Ticket Pricing</td>
-        <td>$5.50</td>
-    </tr>
-    </tfoot>
-</table>
-
-<table>
-    <thead>
-    <th>position</th>
-    <th>team name</th>
-    <th>points</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td>1</td>
-        <td>AFC LEO</td>
-        <td>30</td>
-    </tr>
-        <tr>
-        <td>2</td>
-        <td>Sofa Paka</td>
-        <td>29</td>
-    </tr>
-        <tr>
-        <td>3</td>
-        <td>Gor Mahia</td>
-        <td>28</td>
-    </tr>
-
-    </tbody>
-    <tfoot>
-    <tr>
-        <td colspan="2">Total Ticket Pricing</td>
-        <td>$5.50</td>
-    </tr>
-    </tfoot>
-</table>
-<!--form-->
-<form method="POST">
-    <label>Team Name</label>
-    <input type="text" placeholder="Enter team name" name="team name">
-    <label>Season Points</label>
-    <input type="number" placeholder="Enter points" name="team points">
-    <label>Team Email</label>
-    <input type="email" placeholder="Enter email" name="team email">
-    <label>Team picture</label>
-    <input type="file" name="team pic">
-    <label>Home Team Color</label>
-    <select name="team color">
-        <option value="red">Red</option>
-        <option value="green">Green</option>
-        <option value="purple">Purple</option>
-    </select>
-    <input type="submit" value="submit team">
-    <input type="reset" value="reset form">
-
-</form>
-
+<body>
+<!-- CSS GRID  -->
+<!-- Parent div -->
+<!-- Navbar -->
+<div class="grid-container">
+    <div id="navbarDiv">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/microsoft.png" alt="logo" width="150" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="public/team.html">Team</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                COURSES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Software Development</a></li>
+                                <li><a class="dropdown-item" href="#">Software Engineering</a></li>
+                                <li><a class="dropdown-item" href="#">Software Engineering</a></li>
+                                <li><a class="dropdown-item" href="#">Software Engineering</a></li>
+                                <li><a class="dropdown-item" href="#">Software Engineering</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">24 Weeks</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Vertical Navbar -->
+    <div id="courseDiv">
+        <div class="flex flex-column p-3">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    Main Courses
+                    <a class="nav-link" href="public/team.html">Full Stack Development</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">Software Development</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">Android Development</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">Web Development</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">DevOps Engineering</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">Data Engineering</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">Cybersecurity</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="videoDiv">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sn5-eSLTrSI?si=DjeZi9LzkZceY1ae"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div id="imageDiv">
+        <div>
+            <img src="assets/slideshow-10.jpg" class="image-container" alt="img">
+        </div>
+    </div>
+    <div id="sCourseDiv">
+        <div class="flex flex-column p-3">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    Short Courses
+                    <a class="nav-link" href="public/team.html">INVENTOR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">ARCHICAD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">AUTOCAD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">STATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">SPSS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="applicationForm">
+        <h4 style="text-align: center">Application Form</h4>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="course" class="form-label">Select Course of Interest</label>
+                <select class="form-control" id="course">
+                    <option value="">Full Stack Development</option>
+                    <option value="">Software Development</option>
+                    <option value="">Android Development</option>
+                    <option value="">Web Development</option>
+                    <option value="">DevOps Engineering</option>
+                    <option value="">Data Engineering</option>
+                    <option value="">Cybersecurity</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div id="someDiv">
+        <div class="flex flex-column p-3">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    Programming Courses
+                    <a class="nav-link" href="public/team.html">Javascript/Typescript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">Python/Django</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">Java/Kotlin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="public/team.html">Laravel/PHP</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- BootStrap Grid   -->
+    <div id="footDiv" style="background-color: blanchedalmond">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce
+                        posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna
+                        eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant
+                        morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy
+                        pede. Mauris et orci.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email andrewivia1@gmail.com</p>
+                    <p>Phone +254 745 000 000</p>
+                    <p>Address Westlands, Nairobi Kenya</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <p><a href="https://www.facebook.com/KCAUniversityOfficial/">Facebook</a></p>
+                    <p><a href="https://www.instagram.com/KCAUniversityOfficial/">Instagram</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

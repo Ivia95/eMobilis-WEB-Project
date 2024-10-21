@@ -1,31 +1,60 @@
-form{
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
+.grid-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'nd nd nd nd nd nd nd nd'
+    'cd cd cd vd vd vd id id'
+    'scd scd scd af af af sd sd'
+    'fd fd fd fd fd fd fd fd'
+    ;
 }
-label{
-    display: block;
-    margin-bottom: 5px;
-    font-weight:  bold;
-    color: antiquewhite;
-    padding: 10px;
+#navbarDiv{
+    grid-area: nd;
 }
-input[type="text"],
-input[type="number"],
-input[type="file"],
-input[type="email"],
-input[type="reset"],
-input[type="submit"],
-select{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 4px;
+#courseDiv{
+    grid-area: cd;
 }
-input[type="submit"]{
-    background-color: blue;
+#videoDiv{
+    grid-area: vd;
 }
-input[type="reset"]{
-    background-color: red;
+#imageDiv{
+    grid-area: id;
+}
+#sCourseDiv{
+    grid-area: scd;
+}
+#applicationForm{
+    grid-area: af;
+}
+#someDiv{
+    grid-area: sd;
+}
+#footDiv{
+    grid-area: fd;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+}
+.image-container img{
+    max-width: 315px;
+    height: auto;
+}
+@media screen and (max-width: 600px){
+    .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas:
+        'nd nd nd nd nd nd nd nd'
+        'cd cd cd cd cd cd cd cd'
+        'vd vd vd vd vd vd vd vd'
+        'id id id id id id id id'
+        'scd scd scd scd scd scd scd scd'
+        'af af af af af af af af'
+        'sd sd sd sd sd sd sd sd'
+        'fd fd fd fd fd fd fd fd'
+        ;
+    }
 }
