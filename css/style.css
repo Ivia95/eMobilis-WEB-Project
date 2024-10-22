@@ -8,6 +8,11 @@
     'fd fd fd fd fd fd fd fd'
     ;
 }
+.stylePara{
+    background-color: black;
+    color: white;
+
+}
 #navbarDiv{
     grid-area: nd;
 }
